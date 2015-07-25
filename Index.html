@@ -1,0 +1,2078 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  <title>
+    SMEBIRD Introduction to Programming (Udacity)
+  </title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+<!-- My First Webpage made for the Udacity Course I am taking -->
+<!-- CONCEPT 1 Begins here -->
+
+<body>
+    <div class="Container">  <!--This has the two sections side by side.  Section 1.3 will take up 100% of the screen below these two. -->
+
+        <div class="Section1 Section1Clr LessScreen AtLeft">  <!--Stage 1.1 is at Left of Screen.-->
+            <h1 class="Heading1"> 
+                Lesson 1.1: Basics of the Web and HTML  <!--Section 1.1 Title-->
+            </h1>
+                <div class="LessScreen AtLeft">  <!--Lft Column of 1.1-->
+                
+                    <h2 class="Title1">
+                        What is the web?
+                    </h2>
+                        <p class="TextFormat Text1">
+                            The web is a bunch of computers that communicate with each other.
+                        </p>
+                    <h2 class="TextFormat Title1">
+                        How does the web work?
+                    </h2>
+                    <div class="TextFormat Text1">
+                        <p>
+                            <strong>The web has four main components:</strong>
+                        </p>
+
+                        <ol>
+                            <li>
+                                <strong>You:</strong> You want to visit a web page
+                            </li>
+                            <li>
+                                <strong>Your computer plus a Browser:</strong> Your browser makes a request via the internet
+                            </li>
+                            <li>
+                                <strong>The internet:</strong> Sends an HTTP request to a server
+                            </li>
+                            <li>
+                                <strong>Server:</strong> Locates HTML document and sends it to your computer where your web browser interprets and displays it on your screen
+                            </li>
+                        </ol>
+                    </div>
+                    <h2 class="Title1">
+                        What is a web page?
+                    </h2>
+                        <p class="TextFormat Text1">
+                            A web page is a document written in a language called HTML. Web browsers read these documents, interpret and display them.
+                        </p>
+                </div>
+                <div class="LessScreen AtRight"> <!--Rght Column of 1.1-->
+                    <h2 class="Title1">
+                        What is HTML?
+                    </h2>
+                        <p class="TextFormat Text1">
+                            <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage is the heart of the web.
+                        </p>
+                    <div class="TextFormat Text1">  
+                        <p>
+                            <strong>HTML is made up of:</strong>
+                        </p> 
+                        <ul>
+                            <li>
+                                Text content (What you see)
+                            </li>
+                            <li>
+                                Markup (What the text looks like)
+                            </li>
+                            <li>
+                                References to other documents (eg: images, videos, etc...)
+                            </li>
+                            <li>
+                                Links to other pages
+                            </li>
+                        </ul>
+                    </div>
+                    <h2 class="TextFormat Title1">
+                        Basic HTML vocabulary you should know:
+                    </h2>
+                    <div class="TextFormat Text1">
+                        <p>
+                            <strong>Element:</strong>
+                        </p>
+                        <p>
+                            A structure in HTML that consists of an opening tag, content, and a closing tag.
+                        </p>
+                        <p>
+                            Elements can be either <em><strong>inline</strong></em> (effecting just the text enclosed by tags), or <em><strong>block</strong></em> (block elements have an invisible box around them with height and width that separates them from any other element). While most Elements have both an <em><strong>opening</strong></em> and <em><strong>closing</strong></em> tag, some Elements use only one tag and are referred to as <em><strong>void.</strong></em>
+                        </p>
+                    </div>
+                    <div class="TextFormat Text1">
+                        <p>
+                            <strong>Tags:</strong>
+                        </p>
+                        <p>
+                            Tags mark the beginning and end of an Element. They are made of a less-than symbol, followed by the Element's name, followed by a greater-than symbol.
+                        </p>
+                    </div>
+                    <div class="TextFormat Text1">
+                        <p>
+                            <strong>Attributes and values:</strong>
+                        </p>
+                        <p>
+                            Attributes follow tags and point to a value. Examples are images and links to other web pages
+                        </p>
+                    </div>
+                    <div class="Daffodils">
+                        <img src="http://i.imgur.com/XAPEFhI.jpg" alt="Daffodils" >
+                    </div>  
+                </div>
+                <div class="AtBottom LessScreen">  <!--Bottom of 1.1-->
+                    <h2 class="TextFormat Title1">
+                        A Couple Other Points to Remember:
+                    </h2>
+                        <div class= "TextFormat Text1">
+                            <p>
+                                <strong>Computers are stupid</strong>
+                            </p>
+                            <p>
+                                Why? Because they interpret instruction literally. If you use the wrong Element name in your opening tag or make a typo, a computer cannot "know" what you intended. A program will only work if the instructions are clear and the grammar correct.
+                            </p>
+                        </div>
+                    <div class="TextFormat Text1">
+                        <p>
+                            <strong>There Is Far Too Much to Remember</strong>
+                        </p>
+                        <p>
+                            Don't try to memorize every single fact. Instead, concentrate on understanding how programming languages work, and rely on the internet to remind you of an Element's name or a particular structure.
+                        </p>
+                    </div>
+                    
+                    <div class="ImageFormat Text1">
+                        <img src="http://i.imgur.com/eyfN8dD.jpg" alt="Wisteria" >
+                    </div>
+                </div>
+            </div>
+     
+
+    <!-- CONCEPT 2 begins here -->
+    <!-- Work Session 1.2 -->
+        <div class="Section2 Section2Clr FullScreen">
+            <h1 class="Heading2">
+                Lesson1.2: Creating a Structured Document <!--Section 1.2 Title-->
+            </h1>
+            <div>
+                <h2 class="Title2">
+                    Part 1: How Do Websites Work?
+                </h2>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>VOCABULARY:</strong>
+                    </p>
+                    <p>
+                        <strong>HTML:</strong> A Language with syntax and rules that provides the structure of the web page
+                     </p>
+                    <p>
+                        <strong>CSS: Provides</strong> the styles seen on the web page
+                    </p>
+                    <p>
+                        <strong>Javascript:</strong> Allows actions/changes on the web page
+                    </p>
+                    <p>
+                        <strong>DOM</strong> (Document Object model): The standard convention for interacting with HTML
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h2 class="Title2">
+                    Dig Deep into Code:
+                </h2>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>How to open Developer's Tools in Chrome:</strong>
+                    </p>
+                    <ol>
+                        <li>
+                            Click on the symbol in the top right corner made of three lines (looks like a hamburger)
+                        </li>
+                        <li>
+                            Choose "More Tools" from the menu
+                        </li>
+                        <li>
+                            Choose "Developer Tools." A panel will open showing the structure of the web page you are on. This is not the code, but how the browser interprets it.
+                        </li>
+                        <li>
+                            Click on the triangles to reveal hidden level
+                        </li>
+                        <li>
+                            This is the Tree-like structure of HTML
+                        </li>
+                    </ol>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        For two good articles about Tree-like Structure, check out the following Wikipedia pages:
+                    </p>
+                    <div>
+                        <span class="spanFormat">
+                            <a href="http://en.wikipedia.org/wiki/Tree_structure" class="spanText">Tree Structure</a>
+                        </span>
+                        <span class="spanFormat">
+                            <a href="http://en.wikipedia.org/wiki/Tree_(data_structure)" class="spanText">Tree (Data Structure)</a>
+                        </span>
+                    </div>
+                    <p></p>
+                    <p>
+                        Once you know the language, you can look at any HTML code and understand a great deal about how it will look as a web page. Likewise, you can view any web page and know what the underlying code looks like.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h2 class="Title2">
+                    Everything in HTML is a box:
+                </h2>
+                <div class="TextFormat Text2">
+                    <ul>
+                        <li>
+                            We organize code by determining the placement and size of the largest "boxes" first, and defining smaller and smaller boxes into those spaces.
+                        </li>
+                        <li>
+                            Every "box" is defined by the tag "div."
+                        </li>
+                        <li>
+                            "Divs" can be nestled endlessly within other "Divs."
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <h2 class="Title2">
+                    HTML works with CSS:
+                </h2>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Check out the following line:</strong>
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            &lt;h1 class="article"&gt;
+                        </li>
+                    </ul>
+                    <p>
+                        In this example, the word "class" is an attribute. It allows the user to add CSS style choices to every h1 element with the value "article."
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h2 class="Title2">
+                    Notes on Learning:
+                </h2>
+                    <p class="TextFormat Text2">
+                        As this course proceeds, we will be moving somewhere on a continuum from Novice to Expert in many different areas. To do this, we will constantly stop to reflect on what we have learned, and we will practice as often as possible.
+                    </p>
+                    <p></p>
+            </div>
+
+                    <!-- I need to figure out how to get the correct background color for the two images that I am placing here.  They keep appearing with the background color from section 1, no matter what I do! -->
+                    <div class="TextFormat Text2">
+                        <img src="http://i.imgur.com/UgllaJi.jpg" alt="Tulips" >
+                    </div> 
+      
+
+        </div>
+    </div>
+
+     
+    <!-- This last div ends the container for the columns of 1.1 and 1.2-->
+
+    <!-- CONCEPT 3 Begins Here -->
+
+    <div class="Container">
+        <div class="Section3 Section3Clr FullScreen">
+            <h1 class="Heading3">
+                lesson1.3: Adding CSS and HTML Structure
+            </h1>
+            <div class="Section3Clr LessScreen AtLeft"> <!-- As with Section 1.1, I have placed Section 1.3 in two columns -->
+        
+                <h2 class="Title3">
+                    Use CSS to avoid unnecessary repetition
+                </h2>
+                <div class="TextFormat Text3">
+                    <p class="TextHighlight">
+                        (<em>The following has been taken from the web page of <strong>loeakaodas</strong>, with permission. View original code at: <a href="http://codepen.io/loeakaodas/pen/VLKJXY" class="reference">Student Project</a>)</em>
+                    </p>
+                    <p class="Text3">
+                    
+                        "By utilizing CSS you can reduce the complexity &amp; repetition of having to edit individual sections of HTML in order to change how it looks in the browser. Instead you just apply the desired style with CSS &amp; as a result it can be easily changed           whenever necessary without having to edit the HTML extensively or at all.""
+                
+                    </p>
+                    <p class="TextHighlight">
+                        (<em>The following has been taken from the goggle+ entry of <strong>Adriana Gomez Borda</strong>. View original code at: <a href="https://plus.google.com/" class="reference">Student Conversation</a>)</em>
+                    </p>
+                    <p class="Text3">
+                    
+                    "Faster Websites: fewer repeated styles in CSS result in smaller file sizes, and thus faster downloading of those resources.""
+                    </p>
+                </div>  
+                <div class="TextFormat Text3">  
+                    <p>
+                        Avoiding repetition is a <strong>time saver</strong> and helps reduce the potential of <strong>code errors</strong>: The less a programmer has to type, the lower the chances are of making a typo or other mistake!
+                    </p>
+                    <p>
+                        For additional ease in editing, the CSS can be organized into separate files.
+                    </p>
+                </div>
+                
+                <h2 class="Title3">
+                    How CSS works
+                </h2>
+
+                    <h3 class="Subtitle3">
+                        First you need to link the CSS to your HTML:
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <p>
+                            <strong>Instuctions:</strong>:
+                        </p>
+                        <ol class="IndentedText">
+                            <li>Type &lt;!DOCTYPE HTML&gt;</li>
+                            <li>Create &lt;head&gt; tabs</li>
+                            <li>Add a &lt;link&gt; tab inside the "head" tab (Sublime finishes tags when you type the first letter).</li>
+                        </ol>
+                    </div>
+      
+                <h2 class="Title3">
+                    What is CSS?
+                </h2>
+                    <h3 class="Subtitle3">
+                        CSS = "Cascading Style Sheets"
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <p>
+                            <strong>Cascading </strong>refers to the process of moving from the most general property to the most specific property in your document.
+                        </p>
+                        <p>
+                            The <strong>styles</strong> used in your project can be broken into separate CSS files or <strong>"sheets"</strong> to aid in organizing.
+                        </p>
+                        <p>
+                            CSS properties, or rules, work in a hierarchy, much as laws function in a country:
+                        </p>
+                        <ol class="IndentedText">
+                            <li>
+                                Federal = Document wide rules: properties applied to the highest level &lt;div&gt; block
+                            </li>
+                            <li>
+                                State = Properties applied to sub &lt;div&gt; blocks
+                            </li>
+                            <li>
+                                Municipal = Properties applied to sub-sub &lt;div&gt; blocks
+                            </li>
+                            <li>
+                                Home = Properties applied to individual elements
+                            </li>
+                        </ol>
+                    </div>
+                    <h3 class="Subtitle3">
+                        Cascading depends upon <em>INHERITANCE</em>:
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <p>
+                            <em>INHERITANCE</em> means that a property assigned to an element will be applied to all its descendents (children), unless <br> overwritten by a more local property.
+                        </p>
+                        <p>
+                            Not all propterties are heritable. Refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="reference">CSS reference</a> to find out whether a property is, or is not.
+                        </p>
+                    </div>
+                    <h3 class="Subtitle3">
+                        To add a style choice, we create a <em>SELECTOR</em>:
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <p>
+                            The <em>SELECTOR</em> we choose will determine to which elements a particular style is applied.
+                        </p>
+                        <p>
+                            To see a list of available selectors, and the correct syntax for each, please refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="reference">CSS reference</a>
+                        </p>
+                        <p>
+                            To see a list of available properties, and the correct syntax for each, please refer to the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" class="reference">CSS reference</a>
+                        </p>
+                    </div>
+                    <h3 class="Subtitle3">
+                        Remember!
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <ol>
+                            <li>
+                                Changing the visual properties of an element only changes how it is displayed, not what kind of element it is.
+                            </li>
+                            <li>
+                                Choose type of element (tag) depending on what the element's purpose is. That is, use a tag that matches function!
+                            </li>
+                            <li>
+                                When a tag changes, the box and the font can change as well
+                            </li>
+                        </ol>
+                    </div>
+            </div> 
+
+            <div class="Section3Clr LessScreen AtRight">
+            <div>
+                <h2 class="Title3">
+                    Understanding the Box Model
+                </h2>
+                    <h3 class="Subtitle3">
+                        HTML boxes contain the following:
+                    </h3>
+                    <div class="TextFormat Text3">
+                    <ol class="IndentedText">
+                        <li>Margin</li>
+                        <li>Border</li>
+                        <li>Padding</li>
+                        <li>Content</li>
+                    </ol>
+                    <p>
+                        You can see an element's box in Dev Tools by clicking the Computed tab
+                    </p>
+                </div>
+                    <h3 class="Subtitle3">
+                        At the center of this box is the <strong>Content</strong>.
+                    </h3>
+                    <div class="TextFormat Text3">
+                    <ul class="IndentedText">
+                        <li>
+                            The image or text that appears on the website
+                        </li>
+                        <li>
+                            Consider the content the nucleus: It sits at the center and the surrounding layers protect it, so that other items don't overlap it or sit too close, making the website visually unappealing.
+                        </li>
+                    </ul>
+                </div>
+                    <h3 class="Subtitle3">
+                        Next is the <strong>Padding</strong>.
+                    </h3>
+                    <div class="TextFormat Text3">
+                    <ul class="IndentedText">
+                        <li>
+                            The Padding clears the area around the Content.
+                        </li>
+                        <li>
+                            It is affected by the background-color of the box
+                        </li>
+                        <li>
+                            Think of it as the space inside the box that protects the Content directly.
+                        </li>
+                    </ul>
+                </div>
+                    <h3 class="Subtitle3">
+                        Next is the <strong>Border</strong>.
+                    </h3>
+                    <div class="TextFormat Text3">
+                    <ul class="IndentedText">
+                        <li>
+                            The Border goes around both the Padding and the Content
+                        </li>
+                        <li>
+                            It is inherited from the color property of the box.
+                        </li>
+                    </ul>
+                </div>
+                    <h3 class="Subtitle3">
+                        Last, the out layer is the <strong>Margin</strong>.
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <ul class="IndentedText">
+                            <li>
+                                The Margin clears an area around the Border
+                            </li>
+                            <li>
+                                It has no background-color. It is completely transparent.
+                            </li>
+                            <li>
+                                Think of it as the space between boxes
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            <div>
+                <h2 class="Title3">
+                    Calculating Box Size
+                </h2>
+                    <h3 class="Subtitle3">
+                        Default = Sum of Border, Padding and Content
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <p>
+                            To make the calculation easier, we put the following code into our CSS file:
+                        </p>
+                        <ol class="IndentedText">
+                            <li>* { </li>
+                            <li>box-sizing: border-box;</li>
+                            <li> } </li>
+                        </ol>
+                        <p>
+                            Now, the calculation of the box includes both the border and the padding, so that it's easier to make layouts.
+                        </p>
+                        <p>
+                            You just set the width of the overall box, and no matter how you tweak the padding and border layers, the size of the box will always stay the same.
+                        </p>
+                        <p>
+                            The CSS must include browser-specific prefixes:
+                        </p>
+                        <ul class="IndentedText">
+                            <li>-webkit-box-sizing: border-box;</li>
+                            <li>-moz-box-sizing: border-box; </li>
+                            <li>-ms-box-sizing: border-box </li>
+                            <li>box-sizing: border-box</li>
+                        </ul>
+                        <p>
+                            You can set the size of your box layers in pixels or in percentages:
+                        </p>
+                        <ul class="IndentedText">
+                            <li>
+                                % changes the box as the screen size changes
+                            </li>
+                            <li>
+                                Pixel sets the image to one size, regardless of device. This can lead to a bad user experience
+                            </li>
+                        </ul>
+                        <p>
+                            You can set max-width, so that an element can get smaller, but not larger than a set value. Max-width won't change layout.
+                        </p>
+                    </div>
+                </div>
+            <div>
+                <h2 class="Title3">
+                    Positioning Elements
+                </h2>
+                    <h3 class="Subtitle3">
+                        This is a complicated concept
+                    </h3>
+                    <h3 class="Subtitle3">
+                        Let's look at one display property: flex.
+                    </h3>
+                    <div class="TextFormat Text3">
+                        <p>
+                            Flex allows you to layout a line and distribute space among items in a container, or div.
+                        </p>
+                        <p>
+                            The tag "div" is set, by default, to use the entire width of a page
+                        </p>
+                        <p>
+                            Flex overrides this behavior to allow divs to appear next to each other.
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <div class="Section3Clr LessScreen AtLeft">
+            <div>
+                <p class="TextFormat Text3"></p>
+                <p class="TextFormat Text3"></p>
+                <p class="TextFormat Text3"></p>
+            </div>
+            <h2 class="Title3">
+                Dev Tools
+            </h2>
+                <h3 class="Subtitle3">
+                Developer Tools can help speed up projects
+                </h3>
+                <div class="TextFormat Text3">
+                    <p>
+                        By first testing changes in Dev Tools, you can easily see whether a particular change is advantageous.
+                    </p>
+                    <p>
+                        Use an-online code validator to locate code errors.
+                    </p>
+                    <p>
+                        Once validated, you can place icons on your webpage as proof that your webpage complies with standards.
+                    </p>
+                </div> 
+                <div>
+                    <p class="TextFormat Text3"></p>
+                    <p class="TextFormat Text3"></p>
+                </div>
+                <div class="TextFormat Text3">
+                    <img src="http://i.imgur.com/UlEFpKM.jpg" alt="Garden" >
+                </div>
+                <div>
+                    <p class="TextFormat Text3"></p>
+                    <p class="TextFormat Text3"></p>
+                    
+                </div>
+        </div>
+        <div class="Section3Clr LessScreen AtRight">
+      
+            <h2 class="Title3">
+                How to move from Mockup to Computer:
+            </h2>
+                <h3 class="Subtitle3">
+                    Code, Test, Refine
+                </h3>
+                <div class="TextFormat Text3">
+                    <p>
+                        By first testing changes in Dev Tools, you can easily see whether a particular change is advantageous.
+                    </p>
+                    <ul class="IndentedText">
+                        <li>
+                            First get structure from a design by visually "boxifying" it
+                        </li>
+                        <li>Look for natural boxes </li>
+                        <li>
+                            Choose sizes for boxes and work out their positions on the screen
+                        </li>
+                        <li>
+                            Next, work on placing appropriate tags where they belong
+                        </li>
+                        <li>
+                            Look for repeating styles and semantic elements:
+                        </li>
+                        <li>
+                            Move to smaller and smaller details to polish your project
+                        </li>
+                        <li>View your work in multiple browsers</li>
+                    </ul>
+                </div>
+
+        
+      </div>
+      
+
+    </div>
+    </div>
+
+    <!-- ****************Stage 2 Section of the course begins here************* -->
+
+    <!-- Stage 2 Work Session 1 begins here -->
+    <div class="Container">
+        <div class="Section1 Section1Clr LessScreen2 AtLeft">
+        <h1 class="Heading1">
+            Lesson 2.1: Introduction to Serious Programming
+        </h1>
+      
+            <h2 class="Title1">
+                What is Computer Science?
+            </h2>
+                <p class="TextFormat Text1">
+                    Computer Science is about how to solve problems by breaking them into smaller pieces and then mechanically and precisely describing the sequence of steps that you would use to solve each piece... and those steps can be executed by a computer.
+                </p>
+      
+      
+            <h2 class="Title1">
+                What is a computer?
+            </h2>
+                <p class="TextFormat Text1">
+                    A universal machine that we can program to do any computation. Its power lies in doing things very fast: billions of instructions per second.
+                </p>
+            <h2 class="Title1">
+                What is a program?
+            </h2>
+            <div class="TextFormat Text1">
+                <p>
+                    A very precise sequence of steps that tells the computer what to do. Anything we can write a program for, we can make a computer do.
+                </p>
+                <p>
+                    To learn computing, we need to learn a programming language.
+                </p>
+            </div>
+            <h2 class="Title1">
+                What is a programing language?
+            </h2>
+                <p class="TextFormat Text1">
+                A vocabulary and set of grammatical rules for instructing a computer to perform specific tasks.
+                </p>
+                <h3 class="Subtitle1">
+                    Programming languages come  in three general forms:
+                </h3>
+                <div class="TextFormat Text1">
+                    <p>
+                        Machine language:
+                    </p>
+                    <ol class="IndentedText">
+                        <li>
+                            Written in numbers; the only language the computer really understands
+                        </li>
+                        <li>
+                            Platform specific. Machine language cannot be used on different kinds of computers.
+                        </li>
+                        <li>The fastest language to process</li>
+                    </ol>
+                    <p>
+                        Assembly language:
+                    </p>
+                    <ol class="IndentedText">
+                        <li>
+                            Uses the same instructions as in Machine Language, but keywords and variables have names rather than numbers only, making it easier to read and write.
+                        </li>
+                        <li>
+                            Like machine language, it is platform specific
+                        </li>
+                        <li>
+                            Assembly language must be translated into the machine language of a CPU by a program called an assembler.
+                        </li>
+                        <li>Very fast language to process</li>
+                    </ol>
+                    <p>
+                        High Level Language:
+                    </p>
+                    <ol class="IndentedText">
+                        <li>
+                            The closest to human language, it is easier to read, write and maintain.
+                        </li>
+                        <li>
+                            Platform independent: it can be used on any platform.
+                        </li>
+                        <li>
+                            Must be put through an <strong>interpreter</strong> or a <strong>compiler</strong> that translates the human-like language into the machine language of numbers.
+                        </li>
+                        <li>Slower language to process</li>
+                    </ol>
+                    <p>
+                        See <a href="http://www.webopedia.com/TERM/P/programming_language.html" class="reference">webopedia</a> for more information.
+                    </p>
+                </div>
+
+            <h2 class="Title1">
+                Python is a High Level Program with <strong><em>advantages</em></strong>:
+            </h2>
+                <h3 class="Subtitle1">
+                    Python is easy to use:
+                </h3>
+                    <p class="TextFormat Text1">
+                        It's the closest to human language, so easy to use that it's been called "programming at the speed of thought." Python programs are shorter and take less time to create than programs in many other popular languages.
+                        <!-- Dawson, Michael. "Python Programming for the absolute beginner, Third Edition", Page3. 2010 Course Technology, a part of Cengage Learning.-->
+                    </p>
+                <h3 class="Subtitle1">
+                    Python is a "Glue" Language:
+                </h3>
+                    <p class="TextFormat Text1">
+                        Python can be integrated with other languages such as C, C++ and Java. This means that a programmer can take advatage of work already done in another language while using Python. It also means that the strengths of other languages, such as the extra speed that C or C++ might offer.
+                        <!-- Dawson, Michael. "Python Programming for the absolute beginner, Third Edition", Page4. 2010 Course Technology, a part of Cengage Learning.-->
+                    </p>
+                <h3 class="Subtitle1">
+                    Python has a strong community:
+                </h3>
+                    <p class="TextFormat Text1">
+                        Python has the "Python Tutor mailing list, a more informal way for beginning programmers to ask questions The list is at: <a href="https://mail.python.org/mailman/listinfo/tutor" class="reference">Python Tutor</a>.
+                        <!-- Dawson, Michael. "Python Programming for the absolute beginner, Third Edition", Page4. 2010 Course Technology, a part of Cengage Learning.-->
+                    </p>
+                <h3 class="Subtitle1">
+                    Python is also an interpreter:
+                </h3>
+                    <p class="TextFormat Text1">
+                        It translates our code into machine language and that code can be run on any platform.
+                    </p>
+
+            <h2 class="Title1">
+                Why don't we write programs in human languages?
+            </h2>
+                <h3 class="Subtitle1">
+                    Natural (human) Languages are:
+                </h3>
+                <div class="TextFormat Text1">
+                    <ul class="Bullets1">
+                        <li>
+                            Ambiguous: Words and sentences are open to interpretation. (Example: what is the meaning of bi-weekly -- twice a week, or once every two weeks?).
+                        </li>
+                        <li>
+                            Verbose: Natural languages use too many words and code made with them would be too bulky and slow to process.
+                        </li>
+                    </ul>
+                </div>
+            <h2 class="Title1">
+                How do programming languages work?
+            </h2>
+                <h3 class="Subtitle1">
+                    Like natural (human) languages, programming languages require Grammar:
+                </h3>
+                <div class="TextFormat Text1">
+                    <p>
+                        <strong>Grammar:</strong>
+                    </p>
+                    <p>
+                        A set of production rules that describe how to form strings from the language's alphabet that are valid according to the language's syntax.
+                    </p>
+                    <ul class="IndentedText">
+                        <li>
+                            String: A sequence of characters
+                        </li>
+                        <li>
+                            Syntax: The combinations of symbols that are considered to be a correctly structured document or fragment in that language.
+                        </li>
+                    </ul>
+                </div>
+                    <p class="TextFormat">
+                        See the following Wikipedia pages for more information: <a href="http://en.wikipedia.org/wiki/Formal_grammar" class="reference">Formal Grammar</a>
+                    </p>
+            <h2 class="Title1">
+                How is human, or natural, language turned into programming language?
+            </h2>
+                <h3 class="Subtitle1">
+                    Using Replacement Grammars, or <em>Context-Free Grammars</em>, such as the Backus-Naur Form. 
+                </h3>
+                <div class="TextFormat Text1">
+                    <p>
+                        <strong>Replacement Grammars:</strong>
+                    </p>
+                    <p>
+                        A notation used to describe each part of a language using agreed upon rules. A rule might look like the following:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            &lt;Sentence&gt; ::= &lt;subject&gt; &lt;verb&gt; | &lt;subject&gt; &lt;verb> &lt;object&gt;
+                        </li>
+                        <li>
+                            .
+                        </li>
+                        <li>
+                            (Which would be translated as: "A sentence consists of a subject and a verb <strong>OR </strong> a subject, verb and an object.")
+                        </li>
+                    </ul>
+                    <p>
+                        In a sequence of steps, or <strong>derivations</strong>, each non-terminal (the words in &lt; &gt;) are gradually replaced by a terminal (such as &lt;verb &gt; replaced with the terminal "jump")
+                    </p>
+                </div>
+                <div class="TextFormat Text1">
+                    <p>
+                        Replacement Grammars allow us to describe an infinitely large language with a small set of rules.
+                    </p>
+                    <p>
+                        Languages made with Replacement Grammars are extremely precise!
+                    </p>
+                    <p>
+                        Languages like <strong>Python</strong>, made with Replacement Grammars, are far more strict than natural languages. Rules must be followed exactly, or the instructions will not be understood or carried out.
+                    </p>
+                    <p>
+                        For instance, when writing mathematical expressions in Python, you cannot mistype any part of the expression.
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            "2 + 2 _ 3" might be understood by another person as a typo for "2 + 2 + 3", but the Python interpreter will see it as an error.
+                        </li>
+                    </ul>
+                </div>
+                    <p class="TextFormat">
+                        This gets complicated, so do yourself a favor: Check out the Wikipedia article: <a href="http://en.wikipedia.org/wiki/Backus%E2%80%93Naur_Form" class="reference">Backus-Naur Form</a>
+                    </p>
+                    <p class="TextFormat Text1">
+                        And just because she's awesome, check out this conversation between David Letterman and Rear Admiral Grace Hopper: <a href="http://www.myvidster.com/video/425708/Grace_Hopper_on_Letterman" class="reference">Nanostick</a>
+                    </p>
+      </div>
+    
+
+    <!-- Stage 2 Work Session 2 begins here -->
+
+    <!-- Much of the entries on Variables are a rewording of the Wikipedia article on this subject. http://en.wikipedia.org/wiki/Variable-->
+
+    <!-- I am also using the TextBook "Python Programming for the absolute beginner, Third Edition," by Michael Dawson  -->
+  
+    <div class="Section2 Section2Clr FullScreen">
+            <h1 class="Heading2">
+            Lesson 2.2: Variables and Strings
+        </h1>
+      
+            <h2 class="Title2">
+                What is a variable?
+            </h2>
+                <p class="TextFormat Text2">
+                    In computer programming the word <em>variable</em> denotes a storage location containing some <em><strong>value</strong></em> that is paired with an <em><strong>identifier</strong></em> (a symbolic name).  When a value has been paired with an identifier, we say that it has been <em><strong>assigned</strong></em>.
+                </p>
+        
+      
+            <h2 class="Title2">
+                How is a value assigned?
+            </h2>
+            <div class="TextFormat Text2">
+                <p>
+                    In Python, the syntax for assigning a value to an identifier is as follows:
+                </p>
+                <ul class="NoBullets">
+                    <li>
+                        name = expression (where <em>name</em> is the <strong>identifier</strong> and <em>expression</em> is the <strong>value</strong>.)
+                    </li>
+                </ul>
+                <p>
+                    The operator "=" is used in Python only to assign a value to an identifier.   The "=" is not interpreted as "is equal to" as in standard math equations such as "1 + 1 = 2."  Instead, Python uses the "==" in expressions that are meant to be read as "is equal to."  
+                </p>
+                <p>
+                    For example:  
+                </p>
+                <ul class="NoBullets">
+                    <li>
+                        myName = "smebird" (assigning a value)
+                    </li>
+                    <li>
+                        myName == "smebird" (declaring myName to be equal to the value "smebird") 
+                    </li>
+                </ul>
+            </div>
+      
+            <h2 class="Title2">
+                Why use variables?
+            </h2>
+            <div class="TextFormat Text2">
+                <p>
+                    <strong>Variables are flexible.</strong>
+                </p>
+                <ol class="IndentedText Text2">
+                    <li>
+                        Variables can be either text characters ("strings,") or numbers. 
+                    </li>
+                    <li>
+                        Changing the value or <strong>expression</strong> of a variable in one place changes it everywhere in your document.
+                    </li>
+                    <li>  
+                        The value or expression of a variable can be as small as one character, or as long as the text of an entire book.
+                    </li> 
+                    <li> 
+                        Number values can be acted upon using mathematical operators, such as "+" (addition), "-" (subtraction), "*" (multiplication), and "/" (division).
+                    </li> 
+                    <li> 
+                        String values can be combined using the "+" symbol.  This is referred to as "Concatenation," and while it uses the same symbol as addition, the effect on numbers and strings is very different.  
+                    </li>
+                </ol>
+                <ul class="NoBullets Text2">
+                    <li>
+                        For Example:
+                    </li>
+                    <li>
+                        <strong>myString = "2" + "2" </strong> (produces the value <strong>"22,"</strong> a new string)
+                    </li>
+                    <li>
+                        <strong>myNumber = 2 + 2 </strong> (produces the value <strong>4,</strong> an integer) 
+                    </li>
+                </ul>
+            </div>  
+            <div class="TextFormat Text2">
+                <p>
+                    In Python, any value/expression that is enclosed in quotation marks, whether single or double, will be interpreted as a string, as in the following examples:
+                </p>
+                <ul class="NoBullets Text2">
+                    <li>
+                        myName = "smebird"
+                    </li>
+                    <li>
+                        someNumbers = '0123456789'
+                    </li>
+                    <li>
+                        text_plusNumbers = '0123456789 and "smebird"'
+                    </li>
+                </ul>
+            </div>      
+            <div class="TextFormat Text2">
+                <p>
+                    To use Python to do any calculations, numbers are entered as a value with no quotation marks, as in the following examples:
+                </p>
+                <ul class="NoBullets Text2">
+                    <li>
+                        myAddition = 1 + 2 + 3000000000000
+                    </li>
+                    <li>
+                        myMultiplication = 1234 * 4321
+                    </li>
+                    <li>
+                        myExponents = 3**9
+                    </li>
+                </ul>
+            </div>   
+            <div class="TextFormat Text2">
+                <p>
+                    The convention for identifiers is to start with a lowercase character. You cannot begin an identifier with a number.
+                </p>
+                <p>
+                    Python will print strings in a different color, making it is easy to catch errors, like a forgotton end quote.
+                </p>
+            </div>
+        
+            <div class="TextFormat Text2">
+                <p>
+                    <strong>A note about changing an assigned value:</strong>
+                </p>
+                <p>
+                    Changing the assigned value does not actually delete the former value from storage. It continues to exist, but is no longer paired to its original identifier.
+                </p>
+                <p>
+                    If unpaired values are left in storage, programs can suffer "memory leaks" as storage reaches capacity, eventually leading to a program crash. There are <strong>Garbage Collection Modules</strong> available for Python that can be used to clear cluttered storage.
+                </p>
+            </div>
+      
+            <h2 class="Title2">
+                Indexing:
+            </h2>
+            <div class="TextFormat Text2">
+                <p >
+                    Another powerful way to alter a string value is using its <em>index number </em>to select a character or a series of characters.
+                </p>
+                <p>
+                    Each character in a string has an assigned place value, starting with zero.
+                </p>
+            </div>
+            <div class="TextFormat Text2">
+            <p>
+                The Python syntax for selecting a particular index postion is:
+            </p>
+            <ul class="IndentedText">
+                <li>
+                    <strong>myExample[0]</strong> (select the first character in the string)
+                </li>
+                <li>
+                    <strong>myExample[some number]</strong> (select a character found in the stated position in the string)
+                </li>
+                <li>
+                    <strong>myExample[0:]</strong> (select a new string starting with the first character and continuing until the last)
+                </li>
+                <li>
+                    <strong>myExample[some number:some other number]</strong> (select a new string starting with the stated index number and continuing until one position before the number after the colon)
+                </li>
+                <li>
+                    <strong>myExample[some number:identical number]</strong> (designates an empty string)
+                </li>
+            </ul>
+            </div>
+        <h3 class="Subtitle2">
+            But, watch out for the empty string!
+        </h3>
+        <div class="TextFormat Text2">
+            <p>
+                In the case where <strong>s = ''</strong>, indexing can get strange.
+            </p>
+            <p>
+                Check out the following: 
+            </p>
+            <ul class="IndentedText">
+                <li>
+                    <strong>s = ''</strong>
+                </li>
+                <li>
+                    <strong>s[0] + s[1:] </strong> (will output an error, because there are no characters at position 0 in the string s)
+                </li>
+                <li>
+                    <strong>s[0:] </strong> (will be OK, because the colol, or subsequence operator recognizes this syntax as indicating empty string).  "Why is that the case?  Because!"" (Quoted from Udacity Work Session 2 video)
+                </li>
+            </ul>
+        </div>
+        <h2 class="Title2">
+            Using the "find" method with strings
+        </h2>
+            <p class="TextFormat Text2">
+                In Python, there is a method that will allow you to find the location of any desired string.  The method is "find."
+            </p>
+      
+        <div class="TextFormat Text2">
+            <p>
+                The Syntax for the "find" method is: <strong>myVariable.find("desired string")</strong>
+            </p>
+            <ul class="NoBullets Text2">
+                <li>
+                    For example:
+                </li>
+                <li>
+                    typing <strong>myVariable.find("Explain this text")</strong> might output the index number <strong>8</strong>.
+                </li>
+            </ul>
+            <p>
+                To test if the output number is correct, use it as the index number in a print command:  <strong>print myVariable[8:]</strong>        
+            </p>
+            <ul class="NoBullets Text2">
+                <li>
+                    This should output the string you were seeking: "Explain this text"
+                </li>
+            </ul>
+        </div>
+        <div class="TextFormat Text2">
+            <p>
+                Using a second parameter, you can tell Python to locate a string past its first occurence.
+            </p>
+            <p>
+                The Syntax for two parameters with the "find" method is: <strong>myVariable.find("desired string", index number)</strong>.  
+            </p>
+        
+            <ul class="NoBullets Text2">
+                <li>
+                    For example:
+                </li>
+                <li>
+                    typing <strong>myVariable.find("Explain this text", 5)</strong> might output the index number <strong>17</strong>. Indicating that the first occurence of the string, starting from index number 5, is at index number 17.
+                </li>
+            </ul>
+        
+            <p>
+                Check out the following:
+            </p>
+                <ol class="IndentedText">
+            
+                    <li>
+                        exclamation = "Wow! Golly! Gee! Whiz!"
+                    </li>
+                    <li>
+                        first = example.find('!')
+                    </li>
+                    <li>
+                        second = example.find('!', first + 1)
+                    </li>
+                    <li>
+                        third = example.find('!', second + 1)
+                    </li>
+                    <li>
+                        calmDown = example.find[:first] + ',' + example[first + 1:second] +  ',' + example[second + 1:third] + ',' + example[third + 1:]
+                    </li>
+                    </ol>
+            <p>
+                (Output will be: <strong>"Wow, Golly, Gee, Whiz!</strong>")
+            </p>
+        </div>
+        <p class="TextFormat Text2"></p>
+        <div class="ImageFormat Text2">
+                <img src="http://i.imgur.com/tFr7FvM.jpg" alt="Azaelias">
+        </div>
+                <p class="TextFormat Text2"></p>
+                <p class="TextFormat Text2"></p>
+
+                      
+    </div> 
+     
+    <!-- Work Session 2.3 begins Here YOO HOOOOOOOOO -- NEW WORK SESSION!!!!!!-->
+    <!-- FUNCTIONS -->
+
+    <div class="Container">
+        <div class="Section3 Section3Clr FullScreen">
+            
+        
+        <h1 class="Heading3">
+                lesson2.3: Functions (or Procedures)
+        </h1>
+        
+            <div class="Section3Clr HorzRow">
+                <h2 class="Title3">
+                    What is a function?
+                </h2>
+                <div class="TextFormat Text3">
+                    <p>
+                        Functions are like mini-programs within your program.
+                    </p>
+                    <p>
+                        They take an input (or parameter), apply a procedure to that input, and return the result -- the output.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Section3Clr HorzRow">
+                <h2 class="Title3">
+                    How do we make a function?
+                </h2>
+                <div class="TextFormat Text3">
+                    <p>
+                        Syntax for a function:
+                    </p>
+                    <ul class="NoBullets">
+
+                        <li>
+                            def square(n):
+                        </li>
+                        <li>
+                        <ul class="NoBullets Text3">
+                            <li>
+                                return n * n
+                            </li>
+                        </ul>
+                        </li>
+                        <li>
+                            print square(5)
+                        </li>          
+                    </ul>
+                    <p style="font-size: 16px"> <!--Had to squeeze this in-->
+                        (Output will be <strong>25</strong>)
+                    </p>
+                </div>
+            </div>
+
+            <div class="Section3Clr HorzRow">
+                <h2 class="Title3">
+                    Vocabulary
+                </h2>
+                <div class="TextFormat Text3">
+                    <p>
+                        Functions can have have one <strong>parameter</strong>, or multiple parameters separated by commas.
+                    </p>
+                    
+                    <p>
+                        Each parameter takes a value as its <strong>input</strong> (called <strong>operands</strong> or <strong>arguments</strong>).
+                    </p>
+                    <p>
+                        Each function must <strong>return</strong> a value derived from the code it contains. This is the <strong>output</strong>.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="Section3Clr HorzRow">
+                <h2 class="Title3">
+                    How do we use a function?
+                </h2>
+                <div class="TextFormat Text3">
+                    <p>
+                        To use a function, we can either call it directly, for instance, by using the print command: "print square(5)," or we can insert it at part of the code in another function. This is called <strong>procedure composition</strong>, or a <strong>nested function</strong>.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="Section3Clr HorzRow">
+                <h2 class="Title3">
+                    When should we use a function?
+                </h2>
+                <div class="TextFormat Text3">
+                    <p>
+                        Any time you have lines of code that could be used in other areas of your program. This is one of the best methods of avoiding unnecessary repetition.
+                    </p>
+                </div>
+            </div>
+
+            <div class="Section3Clr HorzRow">
+                <h2 class="Title3">
+                    Why are functions so valuable?
+                </h2>
+                <div class="TextFormat Text3">
+                    <p>
+                        Procedure composition allows for powerful and flexible programming.  One function can be used as a component of many other functions, reducing the amount of code that has to be written, and increasing the variety of outputs possible.
+                    </p>
+                </div>
+            </div>
+        </div>  
+    </div>
+
+    
+        <!--Work Session 2.4 BEGINS HERE!!!!  PAY ATTENTION!  HERE I AM!!!!-->
+    <div class="Container">
+        <div class="FullScreen Section1 Section1Clr">
+        
+        <h1 class="Heading1">
+            lesson2.4: Control Flow & Loops: If and While
+        </h1>
+            <h2 class="Title1">
+                Conditional Expressions:
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        The output of condtional expressions, or <strong>Boolean Conditions</strong> is always either <strong>True</strong> or <strong>False</strong>
+                    </p>
+                    <p>
+                        Boolean conditions compare one or more values, using the comparison operators: "==", "!=", "<", ">".
+                    </p>
+                    <p>
+                        The Boolean Operators <strong>and</strong>, <strong>or</strong>, and <strong>not</strong> are used to combine conditional expressions.
+                    </p>
+                </div>
+            <h2 class="Title1">
+                Why use conditional expressions?
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        Conditional expressions allow us to change a program's behavior depending on the input it receives.
+                    </p>
+                </div>
+            <h2 class="Title1">
+                Using the "or" operator to combine conditional expressions
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        In the following example:
+                    </p>
+                    <ul class="NoBullets Text1">
+                        <li>
+                            def friends(name):
+                        </li>
+                        
+                        <ul class="NoBullets Text1">
+                            <li>
+                                return name[0] == 'D' or name[0] == 'N'
+                            </li>
+                        </ul>
+                    </ul>
+                    <p>
+                        We check whether our input name begins with either a 'D' or an 'N' in one line, simplifying our code.
+                    </p>
+                </div>
+                
+        
+            <h2 class="Title1">
+                Using "if" and "else"
+            </h2>
+            
+                <div class="TextFormat Text1">
+                    <p>
+                        Using "if" and "else" allows for additional decisions to be made within a single function.
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            def biggest(a, b, c):
+                        </li>
+                        <ul  class="NoBullets">
+                            <li>
+                                if a > b:
+                            </li>
+                            <ul  class="NoBullets">
+                                <li>
+                                    if a > c:
+                                </li>
+                                <ul  class="NoBullets">
+                                    <li>
+                                        return a
+                                    </li>
+                                </ul>
+                                <li>
+                                    else:
+                                </li>
+                                <ul  class="NoBullets">
+                                    <li>
+                                        return c
+                                    </li>
+                                </ul>
+                            </ul>
+                            <li>
+                                else:
+                            </li> 
+                            <ul class="NoBullets">
+                                <li>
+                                    if b > c:
+                                </li>
+                                <ul class="NoBullets">
+                                    <li>
+                                        return b
+                                    </li>
+                                </ul>
+                                <li>
+                                    else:
+                                </li>
+                                <ul class="NoBullets">
+                                    <li>
+                                        return c
+                                    </li>
+                                </ul>         
+                        </ul>
+                    </ul>
+                    
+                </div>
+            <h2 class="Title1">
+                Using While Loops:
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        While loops repeatedly executes the body of the "loop" until the test condition is no longer True.
+                    </p>
+                    <p>
+                        Loops are useful whenever a value needs to change in a set increment.  
+                    </p>
+                    <p>
+                        While loops use the comparison operators: "==", "!=", "<", ">", to test whether a test expression is True.  If the result is "True", the code contained within the while loop will be executed.  Once the test expression gives a value of "False", the code will be skipped and the function will drop to the next line.
+                    </p>
+                    <p>
+                        Example:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            i = 0
+                        </li>
+                        <li>
+                            while i < 0:
+                        </li>
+                        <ul class="NoBullets">
+                            <li>
+                                print i
+                            </li>
+                            <li>
+                                i = i + 1
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            <h2 class="Title1">
+                Using Break:
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        Break gives us a way to stop a loop even when its test condition is True.  
+                    </p>
+                    <p>
+                        This gives us the means to avoid "infinite loops" that will run until the computer memory is exhausted (too long these days).
+                    </p>
+                    <p>
+                        Example:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            i = 1:
+                        </li>
+                        <li>
+                            while i != 10:
+                        </li>
+                        <ul class="NoBullets">
+                            <li>
+                                if i == 11:
+                            </li>
+                            <ul class="NoBullets">
+                                <li>
+                                    break
+                                </li>
+                            </ul>
+                            <li>
+                                print i
+                            </li>
+                            <li>
+                                i = i + 2
+                            </li>
+                        </ul>
+                    </ul>
+        </div>
+        
+    </div>
+
+        <!--Work Session 2.5 BEGINS HERE!!!!  THIS IS ALL ABOUT DEBUGGING!!!!-->
+        <!--I AM GETTING SERIOUSLY TIRED AND THE FORMAT WILL BE FULLSCREEN, JUST LIKE 2.4 (BORRRRRRIIIINNNNG!!!!-->
+    <div class="Container">
+        <div class="FullScreen Section2 Section2Clr">
+        
+        <h1 class="Heading2">
+            lesson2.5: Debugging
+        </h1>
+            <h2 class="Title2">
+                There are three main categories of bugs:
+            </h2>
+            <p class="TextFormat Text2">
+                Much of the following is from "Python for Informatics," by Charles Severance.  I began his Coursera course "Programming for Everybody (Python)"" in the first week of June, 2015.
+            </p>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Syntax errors:</strong>
+                    </p>
+                    <p>
+                        Syntax errors are the easiest to make and the easiest to fix.  They occur when the programmer has violated the "grammar" rules of Python.  An example of a syntax error is:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            Print 1 + 2 (In Python, the print command begins with a lowercase "p".)
+                        </li>
+                    </ul>
+                    <p>
+                        Python recognizes syntax errors and will give an <strong>TraceBack error</strong> message stating the problem and the line at which the problem occurs.
+                    </p>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Logic errors:</strong>
+                    </p>
+                    <p>
+                        Logic erros occur the a program has good syntax, but there is a mistake in the order of the statements or perhaps a mistake in how the statements relate to one another. The program may not crash, but the output is unintended. A good example of a logic error might be "take a drink from your water bottle, put it in your backpack, walk to the library, and then put the top back on the bottle."  
+                    </p>
+                    <p>
+                        In programming, this might look like:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            def count():
+                        </li>
+                        <ul class="NoBullets">
+                            <li>
+                                x = 0
+                            </li>
+                            <li>
+                                while x < 10:
+                            </li>
+                            <ul class="NoBullets">
+                                <li>
+                                    print x
+                                </li>
+                                <li>
+                                    x = x + 1
+                                </li>
+                            </ul>
+                        </ul>
+                        <li>
+                            count()
+                        </li>
+                    </ul>
+                    <p>
+                        Which will print the numbers from 0 to 9, instead of the intended 1 to 10.
+                    </p>    
+                    
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Semantic errors:</strong>
+                    </p>
+                    <p>
+                        Semantic errors can be the hardest to find. In this case, the syntax is good, the logic of the operations is correct, but the meaning of one or more lines of code is not what the programmer intended.  In English, the equivalent would be like the following (copied from: <a href="https://mail.python.org/pipermail/tutor/2011-January/081490.html" class="reference">Python Tutor</a>).
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            "Children make nutritious snacks."
+                        </li>
+                        <li>
+                            "Cocaine users are turning to ice."
+                        </li>
+                        <li>
+                            "The building workers are refusing to work after fatal accidents."
+                        </li>
+                    </ul>
+                    <p>
+                        In programming, this would be the equivalent of using an "alist[1:2]" instead of an "alist[1:3]" in an expression. The Python interpreter will have no problem executing the command, but the values returned may be incorrect.
+                    </p>
+                </div>
+            <h2 class="Title2">
+                Steps to debugging a program:
+            </h2>
+                <div class="TextFormat Text2">
+                    <p >
+                        <strong>Use the Scientific Method:</strong>
+                    </p>
+                    <ol class="Text2">
+                        <li>
+                            Observe what is happening in your program by checking the state of the program in various places.
+                        </li>
+                        <li>
+                            Form a hypothesis as to what your program is actually doing (as compared to what you want it to do).
+                        </li>
+                        <li>
+                            Make and run tests to confirm or reject your hypothesis; fix your program if you now know what is causing the problem, or observe more of your program states if you do not.
+                        </li>
+                    </ol>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Examine error messages when programs crash.</strong>
+                    </p>
+                    <p>
+                        The last line of Python Tracebacks will tell you what went wrong.  Reading backwards from there will tell you more about where the problem occurred.
+                    </p>
+                    
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Work from example code.</strong>
+                    </p>
+                    <p>
+                        If your modified code doesn't work, comment it out and do step-by-step modifications to the example code until it does what you want.
+                    </p>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Make sure examples work.</strong>
+                    </p>
+                    <p>
+                        Just because you find example code doesn't mean it will work in your system.  Check the example code you're using to make sure it bahaves the way you expect.
+                    </p>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Check (print) intermediate results.</strong>
+                    </p>
+                    <p>
+                        When you have a working version of your code, save it before you add to the code.  This will give you something to go back to if you introduce too many new bugs.
+                    </p>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        <strong>Test often!</strong>
+                    </p>
+                    <p>
+                        Write the smallest testable code you can manage for each step.  It's good practice both for minimizing debugging time and for reusing code later!
+                    </p>
+                </div>
+        </div>
+
+        <!--Work Session 2.6 BEGINS HERE!!!!  THIS NEW SECTION INTRODUCES DATA LISTS AND FOR LOOPS!!!!-->
+        <!--ANOTHER SIMPLE FORMAT (BORRRRRRIIIINNNNG, BUT EEEEEAAAAAAAAASSSSSYYYYYYYYYY!!!!-->
+    <div class="Container">
+        <div class="FullScreen Section3 Section3Clr">
+        
+        <h1 class="Heading3">
+            lesson2.6: Data Lists and For Loops
+        </h1>
+            <h2 class="Title3">
+                Data lists:
+            </h2>
+            <p class="TextFormat Text3">
+                Data lists (like strings) are a form of structured data.
+            </p>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>How do we create a data list?</strong>
+                    </p>
+                    <p>
+                        Data lists are contained between square brackets "[]" and assigned to a variable.
+                    </p>
+                    <p>
+                        A list can be empty or contain hundreds of elements (expressions). A list can contain strings, numbers or other lists. 
+                    </p>
+                    <p>
+                        Each element of a list must be seaparated by a comma.
+                    </p>
+                </div>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>What makes a list more powerful than strings?:</strong>
+                    </p>
+                    <p>
+                        There are no limitations on what a list can contain.  A single list can be made up of a combination of strings, integers, floats or more lists. Each element of a list has its own index number (starting at zero) and can be printed, replaced, added to or deleted.  Lists contained in lists are called <strong>nested lists</strong>. 
+                    </p>
+                    <p>
+                        The following is an example of a nested list:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            beatles = [['John', 1940], ['Paul', 1942], ['George', 1943], ['Ringo', 1940]]
+                        </li>
+                    </ul>    
+                    <p>
+                        This list gives us four elements, each of which is a list containing two pieces of information. In order to access a specific element, we call its index number.
+                    </p> 
+                    <ul class="NoBullets">
+                        <li>
+                           print  beatles[3]  --- (gives us ['Ringo', 1940])
+                        </li>
+                    </ul>   
+                    <p>
+                        If we want to access a specific element in that nested list, we use to separate brackets.
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                           print  beatles[3][0]  --- (gives us 'Ringo')
+                        </li>
+                    </ul>   
+                </div>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>How do we use lists?</strong>
+                    </p>
+                    <p>
+                        Two powerful concepts of lists are <strong>mutation</strong> and <strong>aliasing</strong>.
+                    </p>
+
+                    </div>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>Mutation</strong>
+                    </p>
+                    <p>
+                        Mutation allows us to change the value of an element. With strings, each time we assigned a new value to an existing string, we left the previous value in memory.  The original value was not overridden, but was no longer paired to our variable and could not be accessed unless re-assigned.
+                    </p>
+                    <p>
+                        With mutation, if we change an element, we replace the original value.  This means that any variable referring to that list will be changed as well.
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            p = ['H', 'e', 'l', 'l', 'o']
+                        </li>
+                        <li>
+                            q = p
+                        </li>
+                        <li>
+                            p[0] = 'Y'
+                        </li>
+                         <li>
+                            print p --- (gives us 'Yello')
+                        </li>
+                        <li>
+                            print q --- (gives us 'Yello')
+                        </li>
+                    </ul>
+                    
+                </div>
+                <div class="TextFormat Text3">
+                    <p >
+                        <strong>Aliasing:</strong>
+                    </p>
+                    <p >
+                        When two variables, as in the above example, refer to the same objects, we call this aliasing.  Aliasing can be useful when you want to enact changes across multiple variables, even when that change occurs as part of a function. This can lead to confusion if you forget that you have aliases and see a variable change in your program, and do not know why that change happened. 
+                    </p>
+                    <p >
+                        However, any alias can be broken by simply assigning one of the aliased variables a new value:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            p = ['H', 'e', 'l', 'l', 'o']
+                        </li>
+                        <li>
+                            q = p
+                        </li>
+                        <li>
+                            p = [1, 2, 3]
+                        </li>
+                         <li>
+                            print p --- (gives us [1, 2, 3])
+                        </li>
+                        <li>
+                            print q --- (gives us 'Hello')
+                        </li>
+                    </ul>
+                    <p >
+                        In the above example, we changed p's assigned value, just as we would do if p had been a string.  A re-assignment is not the same as a mutation.  Now, p and q are assigned different values and a mutation to one will not effect the other.
+                    </p>
+                </div>
+            <h2 class="Title3">
+                List operations:
+            </h2>
+            <p class="TextFormat Text3">
+                Data lists have special and powerful operations.
+            </p>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>Append</strong>
+                    </p>
+                    <p>
+                        Append is like a function, but it is a <strong>method</strong>, so we use it in a way that is similar to how we use find on strings. The sytax is:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            list.append(element)
+                        </li>
+                    </ul> 
+                    <p>
+                        Append adds a new element to the end of an existing list (even if it is an empty list). 
+                    </p> 
+                    <ul class="NoBullets">
+                        <li>
+                            stooges = ['Moe', 'Larry', 'Curly']
+                        </li>
+                        <li>
+                            stooges.append('Shemp')
+                        </li>
+                        <li>
+                            print stooges --- Outputs ['Moe', 'Larry', 'Curly,'Shemp']
+                        </li>
+                    </ul>
+                    <p>
+                        Append is a mutation, so it affects all aliases.  It <strong>very important</strong> to understand that if append is used to add a list containing several elements to another list, the added will be read as <strong>one</strong> element, regardless of what it contains:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            stooges = ['Moe', 'Larry', 'Curly']
+                        </li>
+                        <li>
+                            looney = ['Shemp', 'Marvin the Martian']
+                        </li>
+                        <li>
+                            stooges.append(looney)
+                        </li>
+                        <li>
+                            print stooges --- Outputs ['Moe', 'Larry', 'Curly, <strong>['Shemp', 'Marvin the Martian']</strong> Notice, one, and only one added element!
+                        </li>
+                    </ul>
+                    </p>
+                    <p>
+                        Also, if we change one of the items in "looney," this will change "stooges" as well:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            looney[0] = 'Yosemite Sam'
+                        </li>
+                        <li>
+                            print stooges --- Outputs ['Moe', 'Larry', 'Curly, <strong>['Yosemeti Sam', 'Marvin the Martian']</strong> 
+                        </li>
+                    </ul>
+                </div>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>List + List</strong>
+                    </p> 
+                    <ul class="NoBullets">
+                        <li>
+                            stooges1 = ['Moe', 'Larry']
+                        </li>
+                        <li>
+                            stooge2 = ['Curly', 'Shemp']
+                        </li>
+                        <li>
+                            stooges1 = stooges1 + stooges2 -----(outputs ['Moe', 'Larry', 'Curly, 'Shemp'])
+                        </li>
+                    </ul> 
+                    <p>
+                        But does so <strong>without</strong> changing aliases, so if...
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            stooges1 = ['Moe', 'Larry']
+                        </li>
+                        <li>
+                            comedyTeam = stooges1 
+                        </li>
+                        <li>
+                            stooges2 = ['Curly', 'Shemp']
+                        </li>
+                        <li>
+                            print stooges1 = stooges1 + stooges2 -----(outputs ['Moe', 'Larry', 'Curly, 'Shemp'])
+                        </li>
+                        <li>
+                            print comedyTeam --- (outputs ['Moe', 'Larry'].  NO CHANGE!)
+                        </li>
+                    </ul>
+                    <p>
+                        Notice the difference between how <strong>list+list</strong> and <strong>append</strong> work!  Don't confuse them!
+                    </p> 
+                    </div>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>Len operator</strong>
+                    </p> 
+                    <p>
+                        Len (length) looks like a function call. We pass into len the object whose length we want to know. Len works for any object that is a collection, such as strings (a collection of text characters).
+                    </p> 
+                    <p>
+                        Len always counts the outmost elements in a list.  It does not count nested elements as separate.
+                    </p> 
+                    <ul class="NoBullets">
+                        <li>
+                            len(['a', ['b', ['c']]])  --- (will output 2, since the outermost list contains 2 nested elements)
+                        </li>
+                    </ul> 
+                    <p>
+                        In the case of a string, len will output the number of characters that string contains.
+                    </p>
+                </div> 
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>Index operator</strong>
+                    </p>
+                    <p>
+                        Syntax = list.index(value)
+                    </p>  
+                    <p>
+                        Index scans the elements in a list and outputs the index number of the first element that matches its required value.
+                    </p> 
+                    <p>
+                        If the desired value does not appear in the list, index outputs an error message.
+                    </p> 
+                </div> 
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>In</strong>
+                    </p>
+                    <p>
+                        Syntax = (value) in (list)
+                    </p>  
+                    <p>
+                        Index scans the elements in a list and outputs either True, if the value exists, or False, if the value is not found.
+                    </p> 
+                </div>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>Not in</strong>
+                    </p>
+                    <p>
+                        Syntax = (value) not in (list)
+                    </p>  
+                    <p>
+                        Index scans the elements in a list and outputs either True, if the value does not exist, or False, if the value is found.
+                    </p> 
+                </div>        
+                
+            <h2 class="Title3">
+                Looping through Data Lists Using "For":
+            </h2>
+            <p class="TextFormat Text3">
+                For loops are an easier way to work with lists than the previous "While" loop that we learned.
+            </p>
+                <div class="TextFormat Text3">
+                    <p>
+                        <strong>How do we create a for loop?</strong>
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            for name in list:
+                        </li>
+                        <ul class="NoBullets">
+                        <li>
+                            block
+                        </li>
+                    </ul> 
+                    </ul> 
+                    <p>
+                        "Name" represents a variable that will be assigned each item in our list. Each item will be passed through the code contained in the block, and the loop will end when the last item is finished. The code found immediately after the for loop will then be evaluated.
+                    </p>
+                    
+                </div>                  
+        </div>
+        
+    </div>
+        <!--Work Session 2.7 BEGINS HERE!!!!  THIS IS ABOUT HOW TO SOLVE PROBLEMS!!!!-->
+    <div class="Container">
+        <div class="FullScreen Section1 Section1Clr">
+        
+        <h1 class="Heading1">
+            lesson2.7: How to Solve Problems:
+        </h1>
+            <h2 class="Title1">
+                Understand what the problem is:
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        You can't write code if you don't understand the problem you are trying to solve.
+                    </p>
+                    <p>
+                        First, ask yourself:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            "What are the inputs?"
+                        </li>
+                        <li>
+                            "What are the ouputs?"
+                        </li>
+                    </ul>
+                    <p>
+                        Next, ask how to get from the input to the output in a simple, mechanical way.
+                    </p>
+                </div>
+            <h2 class="Title1">
+                Break down the problem into its smallest possible components:
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        Start by writing your ideas as <strong>pseudocode</strong>, putting into words the steps that will eventually become code.  Planning on paper before trying to work out the correct code can save enormous amounts of time.
+                    </p>
+                    <p>
+                        Once you have a good idea of what steps you need to take, write small bits of code, test them and know what they do. 
+                    </p>
+                    <p>
+                       
+                       <strong>Test, test, test</strong>!
+                    </p>
+                </div>
+            <h2 class="Title1">
+                Test, test, test!
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        There are several options for testing code as you write: 
+                    </p>
+                    <ul>
+                        <li>
+                            Add <strong>print statements</strong>, so that you can see the code at important points.
+                        </li>
+                        <li>
+                            Use the <strong>assert()</strong> function to test cases.
+                        </li>
+                        <li>
+                            Write code that first tests only the simplest cases.  
+                        </li>
+                        <li>
+                            Add complexity and continue to <strong>test, test, test</strong>!  
+                        </li>
+                    </ul>
+                </div>
+            <h2 class="Title1">
+                Don't Panic!
+            </h2>
+                <div class="TextFormat Text1">
+                    <p>
+                        Seriously.   
+                    </p>
+                    <p>
+                        Programming can be mind-explodingly difficult.  If something is going wrong, step away/ take a break/ go to bed/ get some fresh air/ try some exercise/ eat something delicious/ read or watch something funny. 
+                    </p>
+                    <p>
+                        <strong>Don't. Ever. Panic.</strong>
+                    </p>
+                </div>
+        </div>
+        <!--Work Session 3 BEGINS HERE!!!!  Yiiiihhhhhhaaaaaaa, a new section!!!!-->
+        <!--Work Session 3 BEGINS HERE!!!!  Yiiiihhhhhhaaaaaaa, a new section!!!!-->
+        <!--Work Session 3 BEGINS HERE!!!!  Yiiiihhhhhhaaaaaaa, a new section!!!!-->
+        <!--Work Session 3 BEGINS HERE!!!!  Yiiiihhhhhhaaaaaaa, a new section!!!!-->
+        <!--Specifically, this is Stage 3, Section1: Introduction to Abstraction-->
+    <div class="Container">
+        <div class="FullScreen Section2 Section2Clr">
+        
+        <h1 class="Heading2">
+            lesson3.2: Functions (Lesson 3.1 was an introduction)
+        </h1>
+            <h2 class="Title2">
+                Creating the program "Take a Break":
+            </h2>
+            <div class="TextFormat Text2">
+                <p>
+                    The first step in creating any program is thinking through the problem. What inputs and outputs do we want?  
+                </p>
+            </div>
+            <div class="TextFormat Text2">
+                <p>
+                    Once we have thought through the problem, we write a simple pseudocode, such as: 
+                </p>
+                    <ul class="NoBullets">
+                        <li>
+                            Step 1: Set variable to current time
+                        </li>
+                        <li>
+                            Step 2: Create counter
+                        </li>
+                        <li>
+                            Step 3: Set loop condition for &lt;= 2 hours
+                        </li>
+                        <li>
+                            Step 4: Display video
+                        </li>
+                        <li>
+                            Step 5: Reset counter to zero 
+                        </li>
+                        <li>
+                            Step 6: Reset to Current time 
+                        </li>
+                        <li>
+                            Step 7: Loop
+                        </li>
+                    </ul>
+                </div>
+                <div class="TextFormat Text2">
+                    <p>
+                        Here's the <strong>Udacity</strong> pseudocode for this problem:
+                    </p>
+                    <ul class="NoBullets">
+                        <li>
+                            Repeat (loop) 3 times
+                        </li>
+                        <li>
+                            Wait 2 hours
+                        </li>
+                        <li>
+                            Open Browser
+                        </li>
+                    </ul>
+                </div>
+                <h3 class="Subtitle2">
+                    Once we are ready to write the actual Python code for the "Take a Break" program, it is a good idea to search the web for any code that already solves some of what we plan to do.  <em>"Stackoverflow"</em> is an excellent site.
+                </h3>
+                <div class="TextFormat Text2">
+                    <p>
+                        When we type "Open webbrowser in Python," we discover code to do this:
+                    </p>
+                    <ol>
+                        <li>
+                            import webbrowser
+                        </li>
+                        <li>
+                            webbrowser.open("https://www.khanacademy.org/")
+                        </li>
+                    </ol>
+                </div> 
+                <div class="TextFormat Text2">
+                    <p>
+                        Same thing for "Make Python wait."
+                    </p>
+                    <ol>
+                        <li>
+                            import time
+                        </li>
+                        <li>
+                            time.sleep(2)
+                        </li>
+                    </ol>
+                    <p>
+                        The value in the parentheses refers to seconds.  Multiply this value twice by 60 to have the program wait a number of hours.
+                    </p>
+                    <ul>
+                        <li>
+                            time.sleep(2*60*60 )
+                        </li>
+                    </ul>
+                </div>
+            <h2 class="Title2">
+                The Python Standard Library
+            </h2>
+            <div class="TextFormat Text2">
+                <p>
+                    The code that we used above: "webbrowser.open()" and "time.sleep()," are functions saved in Python's library, which we downloaded when we installed the program. 
+                </p>
+                <p>
+                    We do not see the lines of code that make up these functions. Using functions in this way is called <strong>Abstraction</strong>.
+                </p>
+                <p>
+                    Instead of reading the code to understand how a Python library function works, we use Python's <strong>Documentation</strong>.  
+                </p>
+            </div>       
+</body>
+
+</html>

@@ -1,0 +1,322 @@
+/*This is the CSS for my first webpage made during 
+my Udacity course, "Introduction to Programming"*/
+*{ 
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* I have created three main backgrounds
+that alternate with each new section. 
+
+This selector sets the overall form that 
+will be used in every section */
+
+
+.Container {
+    clear: both;
+    
+}
+
+.Section1, .Section2, .Section3 {
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 14px;
+    overflow: hidden;
+
+}
+
+.LessScreen {
+    max-width: 50%;
+}
+.LessScreen2 {
+    max-width: 47%;
+}
+
+.FullScreen {
+    max-width: 100%;
+}
+
+.QuarterScreen {
+    max-width: 50%;
+}
+
+/* The three selectors here change the
+background color of each section*/
+
+.Section1Clr {
+
+    background-color: #7C8B88;
+    
+}
+
+.Section2Clr {
+    background-color: #847C8B;
+    
+}
+.Section3Clr {
+    background-color: #797EB3;
+}
+
+.TopContents, BottomContents {
+    max-width: 100%;
+    border-radius: 20px;
+    border: 2px solid black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-top: 14px;
+    overflow: hidden;
+    
+}
+
+.AtLeft {
+    padding-right: 5px;
+    float: left;
+    
+}
+
+.AtRight {
+    padding-right: 5px;
+    float: right;
+    
+}
+.AtBottom {
+    float: left;
+    padding-right: 10px;
+    
+}
+
+h1 {
+    font-family: Georgia;
+    text-align: center;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.Heading1 {
+    color: #204D1A;
+    background-color: #C1E6C5;
+    border: 2px solid black;
+}
+
+.Heading2 {
+    color: #241154;
+    background-color: #CEA9F5;
+    border: 2px solid black;
+}
+
+.Heading3 {
+    color: #112554;
+    background-color: #9F9CFF;
+    border: 2px solid black;
+}
+
+h2  {
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: Georgia;
+    margin-left: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+
+.Title1  {
+    color: #112554;
+    background-color: #C3DCE6;
+    border: 2px solid black;
+}
+
+.Title2  {
+    color: #241547;
+    background-color: #CBB8E3;
+    border: 2px solid black;
+}
+
+.Title3  {
+    color: #112554;
+    background-color: #C4BBFC;
+    border: 2px solid black;
+}
+
+
+h3 {
+    font-weight: bolder; 
+    font-family: Georgia;
+    margin-left: 20px;
+    border: 2px solid black;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    margin-right: 20px;
+}
+
+
+.Subtitle1 {
+    color: #331A4D;
+    background-color: #B6CDD6;
+}
+
+.Subtitle2 {
+    color: #281D40;
+    background-color: #C1B8CC;
+}
+
+.Subtitle3 {
+    color: #141552;
+    background-color: #9491ED;
+}
+
+p {
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+.TextFormat {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+ul {
+    padding-bottom: 10px;
+    font-size: 18px;
+
+}
+
+ol {
+    padding-bottom: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+
+}
+
+
+.Text1 {
+    color: #1A294D;
+    background-color: #B6CDD6;
+}
+.Text2 {
+    color: #281D40;
+    background-color: #B7AEC2;
+}
+.Text3 {
+    color: #1A294D;
+    background-color: #9491ED;
+}
+
+
+.IndentedText {
+    margin-left: 20px;
+    font-size: 18px;
+    font-family: Georgia;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-right: 70px;
+    padding-left: 50px;
+    margin-right: 20px;
+}
+
+
+.Circles3 {
+    font-size: 18px;
+    padding-right: 140px;
+    padding-left: 90px;
+    padding-bottom: 20px;
+    list-style: circle;
+    
+}
+
+.NoBullets {
+    font-size: 18px;
+    padding-right: 20px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-top: 1px;
+    list-style: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.reference {
+    font-size: 16px;
+    color: white;
+}
+
+.TextHighlight {
+    font-size: 16px;
+    color: #E0E4FF;
+}
+
+
+.ImageFormat {
+    border: 2px solid black;
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.Daffodils {
+    margin-left: 20px;
+    border: 2px solid black;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-right: 20px;
+    max-width: 65%;
+    color: #1A294D;
+    background-color: #B6CDD6;
+}
+
+.HorzRow {
+    display: inline-block;
+    max-width: 30%
+}
+
+.spanFormat {
+    margin-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    padding-right: 10px;
+    padding-left: 15px;
+    margin-right: 20px;
+    max-width: 100%;
+}
+
+.spanText {
+    font-style: Georgia
+    font-size: 20px;
+    color: white;
+}
